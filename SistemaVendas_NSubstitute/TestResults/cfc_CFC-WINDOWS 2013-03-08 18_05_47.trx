@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="11f00505-d9f0-4507-a241-9b67fae67423" name="cfc@CFC-WINDOWS 2013-03-08 18:05:47" runUser="cfc-windows\cfc" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="d3654c14-fcf5-4f6a-ac3b-24d3329e6322">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="cfc_CFC-WINDOWS 2013-03-08 18_05_47">
+      <DeploymentItem filename="C:\mellon\github\Turma1Mellon\SistemaVendas\packages\Moq.4.0.10827\lib\NET40\Moq.dll" />
+      <DeploymentItem filename="C:\mellon\github\Turma1Mellon\SistemaVendas\SistemaVendas\bin\Debug\SistemaVendas.exe" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2013-03-08T18:05:47.0702487-03:00" queuing="2013-03-08T18:05:47.2862611-03:00" start="2013-03-08T18:05:47.3922672-03:00" finish="2013-03-08T18:05:47.9823009-03:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="1" executed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="TesteCalculaTotalDeRoyaltiesDoMes2Vendas100" storage="c:\mellon\github\turma1mellon\sistemavendas\testevendas\bin\debug\testevendas.dll" id="39da908d-a713-14b4-ded5-0539c09eb0de">
+      <Execution id="6ff75cfd-3058-45c6-9730-3a3945bcb861" />
+      <TestMethod codeBase="C:/mellon/github/Turma1Mellon/SistemaVendas/TesteVendas/bin/Debug/TesteVendas.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TesteVendas.TesteCalculoRoyalties, TesteVendas, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TesteCalculaTotalDeRoyaltiesDoMes2Vendas100" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="39da908d-a713-14b4-ded5-0539c09eb0de" executionId="6ff75cfd-3058-45c6-9730-3a3945bcb861" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="6ff75cfd-3058-45c6-9730-3a3945bcb861" testId="39da908d-a713-14b4-ded5-0539c09eb0de" testName="TesteCalculaTotalDeRoyaltiesDoMes2Vendas100" computerName="CFC-WINDOWS" duration="00:00:00.2680152" startTime="2013-03-08T18:05:47.4042678-03:00" endTime="2013-03-08T18:05:47.9532992-03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6ff75cfd-3058-45c6-9730-3a3945bcb861">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual failed. Expected:&lt;40&gt;. Actual:&lt;19&gt;. </Message>
+          <StackTrace>   em TesteVendas.TesteCalculoRoyalties.TesteCalculaTotalDeRoyaltiesDoMes2Vendas100() na C:\mellon\github\Turma1Mellon\SistemaVendas\TesteVendas\TesteCalculoRoyalties.cs:linha 76
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

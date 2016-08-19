@@ -7,16 +7,18 @@ namespace SistemaVendas
 {
     public class CalculadoraComissao
     {
-        public const decimal COMISSAO_FAIXA_2 = 6;
+        public const decimal VALOR_LIMITE_COMISSAO = 10000;
+        public const decimal COMISSAO_FAIXA_1 = 0.05m;
+        public const decimal COMISSAO_FAIXA_2 = 0.06m;
 
-        public decimal CalculaValorTotalComissao(decimal valor_venda)
+        public virtual decimal CalculaValorTotalComissao(decimal valor_venda)
         {
-            if (valor_venda > 10000)
+            if (valor_venda > VALOR_LIMITE_COMISSAO)
             {
-                return (valor_venda / 100) * COMISSAO_FAIXA_2;
+                return (valor_venda  * COMISSAO_FAIXA_2 );
             }
             else {
-                return (valor_venda / 100) * 5;
+                return (valor_venda * COMISSAO_FAIXA_1);
             }
         }
     }
